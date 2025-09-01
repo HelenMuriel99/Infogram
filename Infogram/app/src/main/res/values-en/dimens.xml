@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="editText_textSize">20dp</dimen>
-    <dimen name="login_horizontalMargin">40dp</dimen>
-    <dimen name="login_marginTop">20dp</dimen>
-    <dimen name="imageView_layoutHeigth">150dp</dimen>
     <dimen name="textView_textSize">18sp</dimen>
     <dimen name="marginTop_create_account">35dp</dimen>
     <dimen name="padding_create_account">40dp</dimen>
