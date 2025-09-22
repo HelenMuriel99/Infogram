@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.evelyn.infogram"
-        minSdk 27
+        minSdk 26
         targetSdk 36
         versionCode 1
         versionName "1.0"
@@ -36,6 +36,9 @@ dependencies {
     implementation libs.activity
     implementation libs.constraintlayout
     implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.zoonref:simple-view-behavior:1.0'
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core

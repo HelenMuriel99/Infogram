@@ -1,40 +1,35 @@
-package com.evelyn.infogram;
+package com.evelyn.infogram.view;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.evelyn.infogram.view.ContainerActivity;
-import com.evelyn.infogram.view.CreateAccontActivity;
+import com.evelyn.infogram.R;
 
-
-public class LoginActivity extends AppCompatActivity {
+public class ImageDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_image_detail);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        showToolBar("",true);
     }
-    public void goCreateAcoount(View view) {
-       Intent intent = new Intent(this, CreateAccontActivity.class);
-       startActivity(intent);
-    }
+    public void showToolBar(String titulo, boolean botonSubir) {
+        Toolbar toolbar= findViewById(R.id.toolbar_image_detail);
+        setSupportActionBar(toolbar);
 
-
-    public void login(View view) {
-        Intent intent = new Intent(this, ContainerActivity.class);
-        startActivity(intent);
+        getSupportActionBar().setTitle(titulo);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(botonSubir);
     }
 }

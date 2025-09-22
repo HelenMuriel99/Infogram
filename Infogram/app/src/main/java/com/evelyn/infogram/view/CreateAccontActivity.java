@@ -1,4 +1,4 @@
-package com.evelyn.infogram;
+package com.evelyn.infogram.view;
 
 import android.os.Bundle;
 
@@ -8,6 +8,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.evelyn.infogram.R;
 
 public class CreateAccontActivity extends AppCompatActivity {
 
